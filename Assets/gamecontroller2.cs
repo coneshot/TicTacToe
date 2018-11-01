@@ -13,7 +13,12 @@ public class gamecontroller2 : MonoBehaviour {
     {
 
 
-        if ((boxes[0, 0] == 1 && boxes[0, 1]== 1 && boxes[0, 2] == 1)
+    }
+
+    // Update is called once per frame
+    void Update () {
+
+        if ((boxes[0, 0] == 1 && boxes[0, 1] == 1 && boxes[0, 2] == 1)
             || (boxes[1, 0] == 1 && boxes[1, 1] == 1 && boxes[1, 2] == 1)
             || (boxes[2, 0] == 1 && boxes[2, 1] == 1 && boxes[2, 2] == 1)
             || (boxes[0, 0] == 1 && boxes[1, 0] == 1 && boxes[2, 0] == 1)
@@ -38,9 +43,4 @@ public class gamecontroller2 : MonoBehaviour {
             NewText.GetComponent<TextMesh>().text = ("X Win!");
         }
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }
